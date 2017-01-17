@@ -1,0 +1,42 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: top;
+  background: #fff;
+}
+
+td, th {
+  border: 1px solid #ccc;
+}
+
+th {
+  vertical-align: bottom;
+}
+
+.text {
+  display: inline-block;
+  overflow: hidden;
+  width: 1.5em;
+  line-height: 1.5;
+ }
+ 
+ .rotated-text {
+   display: inline-block;
+   white-space: nowrap;
+   -webkit-transform: translate(0,100%) rotate(-90deg);
+   -moz-transform: translate(0,100%) rotate(-90deg);
+   -o-transform: translate(0,100%) rotate(-90deg);
+   -ms-transform: translate(0,100%) rotate(-90deg);
+   transform: translate(0,100%) rotate(-90deg);
+   -webkit-transform-origin: 0 0;
+   -moz-transform-origin: 0 0;
+   -o-transform-origin: 0 0;
+   -ms-transform-origin: 0 0;
+   transform-origin: 0 0;
+ }
+ 
+ .rotated-text:after {
+   content: "";
+   float: left;
+   margin-top: 100%;
+ }
