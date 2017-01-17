@@ -1,5 +1,4 @@
 .text {
     writing-mode:tb-rl;
     filter:flipH flipV;
-    height:60px;
 }
