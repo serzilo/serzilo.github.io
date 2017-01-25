@@ -1,0 +1,111 @@
+/*
+* Common styles
+*/
+html,
+button,
+input {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+/*
+* Form elements
+*/
+.form-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-input,
+.form-button,
+.form-submit {
+    outline: none;
+}
+
+.form-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #dae1ee;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 17px;
+    transition: border-color 0.1s linear 0s, box-shadow 0.1s linear 0s;
+}
+
+.form-input:focus {
+    border-color: #93b8f9 !important;
+    box-shadow: 0 0 8px 0 rgba(81, 140, 245, 0.32);
+}
+
+.form-input_password {
+    padding-right: 50px;
+}
+
+.form-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.form-submit {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #43a7f4;
+    border: 1px solid #43a7f4;
+    color: #fff;
+    font-size: 15px;
+    line-height: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+    transition: border-color 0.1s linear 0s, background-color 0.1s linear 0s;
+}
+
+.form-submit:hover {
+    background-color: #55b0f5;
+    border-color: #55b0f5;
+}
+
+.form-submit:active {
+    padding: 11px 10px 9px 10px;
+}
+
+.form-button {
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+}
+
+.form-button_show-password {
+    position: absolute;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    border: none;
+    width: 40px;
+    padding: 0;
+    border-left: 1px solid #dae1ee;
+}
+
+.form-button_show-password:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    height: 24px;
+    width: 24px;
+    background: 0 0 url('../images/icons.png') no-repeat;
+}
+
+.form-button_show-password.clicked:after {
+    background-position: 0 -24px;
+}

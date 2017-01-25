@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Site login</title>
+		<link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="app">
+            <form id="loginForm" action="/" method="post">
+                <label class="form-label" for="login">Логин</label>
+                <div class="form-field">
+                    <input id="login" class="form-input" type="text" value="" autofocus />
+                </div>
+
+                <label class="form-label" for="password">Пароль</label>
+
+                <div class="form-field">
+                    <input id="password" class="form-input form-input_password" type="password" value="" />
+                    <button class="form-button form-button_show-password"></button>
+                </div>
+
+                <button class="form-submit" type="submit">Войти</button>
+            </form>
+
+
+
+        </div>
+
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
