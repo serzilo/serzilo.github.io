@@ -126,7 +126,7 @@
             errorMessage = 'Аккаунт с таким логином не найден. Попробуйте ещё раз';
         } else if (User.password !== data.password) {
             isValidated = false;
-            errorMessage = 'Не правильный пароль. Попробуйте ещё раз';
+            errorMessage = 'Неправильный пароль. Попробуйте ещё раз';
         }
 
         serverErrors.innerHTML = errorMessage;
