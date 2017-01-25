@@ -56,15 +56,17 @@
 
     function processingForm() {
         var form = document.getElementById('loginForm'),
-            formInputs = form.querySelectorAll('.js-form-input');
+            formInputs = form.getElementsByClassName('js-form-input'),
+            formInputsLength = formInputs.length;
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
             var formData = {};
 
-            formInputs.forEach(function(element) {
-                var data = validateFormInput(element);
+            for (var i = 0; i < formInputsLength; i++) {
+                var element = formInputs[i],
+                    data = validateFormInput(element);
 
                 if (data.error && data.error === true) {
                     if (formData.error === undefined) {
@@ -75,7 +77,7 @@
                 }
 
                 formData[data.name] = data.value;
-            });
+            }
 
             if (!formData.error) {
                 if (processingConfidentialData(formData)) {
