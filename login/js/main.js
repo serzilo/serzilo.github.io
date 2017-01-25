@@ -68,6 +68,10 @@
                 var data = validateFormInput(element);
 
                 if (data.error && data.error === true) {
+                    if (formData.error === undefined) {
+                        element.focus();
+                    }
+                    
                     formData.error = true;
                 }
 
@@ -76,7 +80,7 @@
 
             if (!formData.error) {
                 if (processingConfidentialData(formData)) {
-                    alert('good data!');
+                    showUserPage(formData.login);
                 }
             } else {
                 toggleErrorMessage(false);
@@ -144,6 +148,15 @@
         } else {
             Utils.addClass(serverErrors, 'hidden');
         }
+    }
+
+    function showUserPage(login) {
+        var userLayout = document.getElementById('userLayout');
+
+        userLayout.querySelector('.layout_wrapper').innerHTML = 'Добро пожаловать, ' + login + '!';
+
+        Utils.addClass(document.getElementById('formLayout'), 'hidden');
+        Utils.removeClass(userLayout, 'hidden');
     }
 
     init();

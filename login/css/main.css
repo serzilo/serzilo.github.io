@@ -5,20 +5,28 @@ html,
 button,
 input {
     color: #444;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /*
 * Layout
 */
-.layout_form {
-    width: 300px;
+.layout {
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.layout_form-wrapper {
+.layout_form {
+    width: 300px;
+}
+
+.layout_user {
+    width: 600px;
+}
+
+.layout_wrapper {
     padding: 10px;
 }
 
@@ -80,7 +88,7 @@ input {
     line-height: 17px;
     color: #fff;
     padding: 11px 10px;
-    background-color: #ff9a95;
+    background-color: #fd7373;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -92,7 +100,7 @@ input {
     left: -19px;
     margin-top: -10px;
     border: 10px solid transparent;
-    border-right-color: #ff9a95;
+    border-right-color: #fd7373;
 }
 
 .form-label {
@@ -129,6 +137,7 @@ input {
     box-sizing: border-box;
     display: block;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .form-button:hover {
@@ -168,6 +177,7 @@ input {
 .form-button_show-password:active:after {
     margin-top: -11px;
 }
+
 
 /*
 * Error message
