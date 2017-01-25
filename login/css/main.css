@@ -8,10 +8,30 @@ input {
     font-family: Arial, Helvetica, sans-serif
 }
 
+/*
+* Layout
+*/
+.layout_form {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.layout_form-wrapper {
+    padding: 10px;
+}
+
 
 /*
 * Form elements
 */
+.form-header {
+    padding: 10px;
+    background: #dae1ee;
+    font-weight: bold;
+}
+
 .form-field {
     position: relative;
     margin-bottom: 10px;
@@ -36,12 +56,17 @@ input {
 }
 
 .form-input:focus {
-    border-color: #93b8f9 !important;
+    border-color: #93b8f9;
     box-shadow: 0 0 8px 0 rgba(81, 140, 245, 0.32);
 }
 
 .form-input_password {
     padding-right: 50px;
+}
+
+.form-field_error .form-input {
+    border-color: #ff9a95;
+    box-shadow: 0 0 8px 0 rgba(255, 154, 149, 0.7)
 }
 
 .form-label {
@@ -108,4 +133,17 @@ input {
 
 .form-button_show-password.clicked:after {
     background-position: 0 -24px;
+}
+
+/*
+* Error message
+*/
+.error {
+    max-width: 600px;
+    margin: 50px auto;
+    color: #fff;
+    background-color: #fd7373;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
 }

@@ -7,25 +7,29 @@
         <link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div id="app">
-            <form id="loginForm" action="/" method="post">
-                <label class="form-label" for="login">Логин</label>
-                <div class="form-field">
-                    <input id="login" class="form-input" type="text" value="" autofocus />
-                </div>
+        <div>
+            <div id="serverErrors" class="error hidden">Логин или пароль введены не правильно. Попробуйте ещё раз.</div>
+        </div>
 
-                <label class="form-label" for="password">Пароль</label>
+		<div class="layout_form">
+            <div class="form-header">Вход</div>
+            <div class="layout_form-wrapper">
+                <form id="loginForm" action="/" method="post">
+                    <label class="form-label" for="login">Логин</label>
+                    <div class="form-field">
+                        <input data-validation="required" id="login" name="login" class="form-input js-form-input" type="text" value="" autofocus />
+                    </div>
 
-                <div class="form-field">
-                    <input id="password" class="form-input form-input_password" type="password" value="" />
-                    <button class="form-button form-button_show-password"></button>
-                </div>
+                    <label class="form-label" for="password">Пароль</label>
 
-                <button class="form-submit" type="submit">Войти</button>
-            </form>
+                    <div class="form-field">
+                        <input data-validation="required" id="password" name="password" class="form-input form-input_password js-form-input" type="password" value="" />
+                        <button id="showPasswordButton" class="form-button form-button_show-password" title="Показать пароль"></button>
+                    </div>
 
-
-
+                    <button class="form-submit" type="submit">Войти</button>
+                </form>
+            </div>
         </div>
 
 
