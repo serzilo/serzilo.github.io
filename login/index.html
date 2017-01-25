@@ -8,7 +8,7 @@
 	</head>
 	<body>
         <div>
-            <div id="serverErrors" class="error hidden">Логин или пароль введены не правильно. Попробуйте ещё раз.</div>
+            <div id="serverErrors" class="error hidden"></div>
         </div>
 
 		<div class="layout_form">
@@ -17,14 +17,16 @@
                 <form id="loginForm" action="/" method="post">
                     <label class="form-label" for="login">Логин</label>
                     <div class="form-field">
-                        <input data-validation="required" id="login" name="login" class="form-input js-form-input" type="text" value="" autofocus />
+                        <input data-required="required" id="login" name="login" class="form-input js-form-input" type="text" value="" autofocus />
+                        <div class="form-error hidden"></div>
                     </div>
 
                     <label class="form-label" for="password">Пароль</label>
 
                     <div class="form-field">
-                        <input data-validation="required" id="password" name="password" class="form-input form-input_password js-form-input" type="password" value="" />
+                        <input data-required="required" id="password" name="password" class="form-input form-input_password js-form-input" type="password" value="" />
                         <button id="showPasswordButton" class="form-button form-button_show-password" title="Показать пароль"></button>
+                        <div class="form-error hidden"></div>
                     </div>
 
                     <button class="form-submit" type="submit">Войти</button>

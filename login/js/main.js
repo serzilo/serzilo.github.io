@@ -18,7 +18,7 @@
 
     function init() {
         initShowPassword();
-        validateForm();
+        processingForm();
     }
 
     function initShowPassword() {
@@ -36,7 +36,7 @@
                 btnClass: 'clicked'
             };
 
-        button.addEventListener('click', function (e) {
+        button.addEventListener('click', function(e) {
             e.preventDefault();
 
             var type = input.type;
@@ -55,14 +55,95 @@
         }, false);
     }
 
-    function validateForm() {
+    function processingForm() {
         var form = document.getElementById('loginForm'),
-            serverErrors = document.getElementById('serverErrors');
+            formInputs = form.querySelectorAll('.js-form-input');
 
-        form.addEventListener('submit', function (e) {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
 
+            var formData = {};
+
+            formInputs.forEach(function(element) {
+                var data = validateFormInput(element);
+
+                if (data.error && data.error === true) {
+                    formData.error = true;
+                }
+
+                formData[data.name] = data.value;
+            });
+
+            if (!formData.error) {
+                if (processingConfidentialData(formData)) {
+                    alert('good data!');
+                }
+            } else {
+                toggleErrorMessage(false);
+            }
+
+            console.dir(formData);
+
         }, false);
+    }
+
+    function validateFormInput(element) {
+        var data = {},
+            value = element.value.trim();
+
+        data.name = element.getAttribute('name');
+        data.value = value;
+
+        if (element.hasAttribute('data-required')) {
+            var parent = element.parentNode,
+                error = parent.querySelector('.form-error');
+
+            if (value.length == 0) {
+                Utils.addClass(parent, 'form-field_error');
+
+                error.innerHTML = 'Поле должно быть заполнено';
+                Utils.removeClass(error, 'hidden');
+
+                data.error = true;
+            } else {
+                Utils.removeClass(parent, 'form-field_error');
+
+                error.innerHTML = '';
+                Utils.addClass(error, 'hidden');
+            }
+        }
+
+        return data;
+    }
+
+    function processingConfidentialData(data) {
+        var isValidated = true,
+            errorMessage = '',
+            serverErrors = document.getElementById('serverErrors');
+
+        if (User.login !== data.login) {
+            isValidated = false;
+            errorMessage = 'Аккаунт с таким логином не найден. Попробуйте ещё раз';
+        } else if (User.password !== data.password) {
+            isValidated = false;
+            errorMessage = 'Не правильный пароль. Попробуйте ещё раз';
+        }
+
+        serverErrors.innerHTML = errorMessage;
+
+        toggleErrorMessage(isValidated === false);
+
+        return isValidated;
+    }
+
+    function toggleErrorMessage(show) {
+        var serverErrors = document.getElementById('serverErrors');
+
+        if (show) {
+            Utils.removeClass(serverErrors, 'hidden');
+        } else {
+            Utils.addClass(serverErrors, 'hidden');
+        }
     }
 
     init();
