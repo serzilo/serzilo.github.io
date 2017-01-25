@@ -1,20 +1,19 @@
 (function() {
     var User = {
-        login: 'admin',
-        password: 'qwerty12345'
-    };
-
-    var Utils = {
-        addClass: function (o, c) {
-            var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
-            if (re.test(o.className)) return;
-            o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "");
+            login: 'admin',
+            password: 'qwerty12345'
         },
-        removeClass: function (o, c) {
-            var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
-            o.className = o.className.replace(re, "$1").replace(/\s+/g, " ").replace(/(^ | $)/g, "");
-        }
-    };
+        Utils = {
+            addClass: function(o, c) {
+                var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+                if (re.test(o.className)) return;
+                o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "");
+            },
+            removeClass: function(o, c) {
+                var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+                o.className = o.className.replace(re, "$1").replace(/\s+/g, " ").replace(/(^ | $)/g, "");
+            }
+        };
 
     function init() {
         initShowPassword();
@@ -41,7 +40,7 @@
 
             var type = input.type;
 
-            if (type === 'password') {
+            if (type === constants.showPassword.type) {
                 input.type = constants.hidePassword.type;
                 button.setAttribute('title', constants.hidePassword.title);
                 Utils.addClass(button, constants.btnClass);
@@ -71,7 +70,7 @@
                     if (formData.error === undefined) {
                         element.focus();
                     }
-                    
+
                     formData.error = true;
                 }
 
@@ -85,9 +84,6 @@
             } else {
                 toggleErrorMessage(false);
             }
-
-            console.dir(formData);
-
         }, false);
     }
 

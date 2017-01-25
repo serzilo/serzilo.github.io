@@ -2,8 +2,8 @@
 * Common styles
 */
 html,
-button,
-input {
+input,
+button {
     color: #444;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -153,7 +153,6 @@ input {
     bottom: 1px;
     border: none;
     width: 40px;
-    padding: 0;
     border-left: 1px solid #dae1ee;
 }
 
