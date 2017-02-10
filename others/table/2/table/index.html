@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Заказы</title>
+		<link rel="stylesheet" type="text/css" href="media/css/main.css" />
+		
+        <script type="text/javascript" src="media/js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="media/js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="media/js/main.js"></script>
+		
+		<script id="clientTemplate" type="text/x-jquery-tmpl">
+				<tr>
+							<td class="number"><span>${number}</span></td>
+							<td class="name"><span>${name}</span></td>
+							<td class="price"><span>${price} руб.</span></td>
+							<td class="status">${$status}{{if status == true}}
+												<span class="w"><span class="paid">доставлен</span></span>
+												{{else}}
+												<span class="w"><span class="not_paid">обрабатывается</span></span>
+												{{/if}}
+							</td>
+				</tr>
+		</script>
+	</head>
+	<body>
+		<div id="main_wrapper">
+			<div id="content">
+				<div id="toolbar">
+					<table>
+						<tr>
+							<td class="number"><i>по номеру</i></td>
+							<td class="name"><i>по имени</i></td>
+							<td class="price"><i>по цене</i></td>
+							<td class="status"><i>по статусу</i></td>
+						</tr>
+					</table>
+				</div><!-- #toolbar -->
+				
+				<div id="table_wrap">
+					<table>
+						
+					</table>
+				</div><!-- #table_wrap -->
+				
+				<div id="navigation" style="display:none;">
+					<span class="page_nav_wrap add_mrg_lft"><a href="#" id="prev_page"></a></span>
+					<span class="page_nav_wrap page_nav_wrap_select"><span id="page_selector">
+						<select></select>
+					</span>
+						
+					</span><span class="num_of_pages"></span>
+					
+					<span class="page_nav_wrap"><a href="#" id="next_page"></a></span>
+					
+					<span id="select">Показывать: 
+					<select>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="all">все</option>
+					</select>
+					</span>
+				</div><!-- #navigation -->
+			</div><!-- #content -->
+			
+			<div id="filter">
+				<span class="filter_title">Фильтрация</span>
+				<div class="f_block" id="filter_by_price">
+					<span class="title"><i>По цене</i></span>
+					<span class="wrap_radio hide_it">
+						<label><input type="radio" name="filter_by_price" value="all" checked="checked" />вывести все</label>
+						<label><input type="radio" name="filter_by_price" value="0" /><1000 руб.</label>
+						<label><input type="radio" name="filter_by_price" value="1" />>1000 руб.</label>
+					</span>
+					
+					
+				</div><!-- .f_block -->
+				
+				<div class="f_block" id="filter_by_status">
+					<span class="title"><i>По статусу</i></span>
+					<span class="wrap_radio hide_it">
+						<label><input type="radio" name="filter_by_status" value="all" checked="checked" />вывести все</label>
+						<label><input type="radio" name="filter_by_status" value="0" />доставленные</label>
+						<label><input type="radio" name="filter_by_status" value="1" />в обработке</label>
+					</span>
+				</div><!-- .f_block -->
+				
+				<div class="f_block" id="filter_by_tarif">
+					<span class="title"><i>По тарифу</i></span>
+					<span class="wrap_radio hide_it">
+						<label><input type="radio" name="filter_by_tarif" value="all" checked="checked" />вывести все</label>
+						<label><input type="radio" name="filter_by_tarif" value="0" />Доступный</label>
+						<label><input type="radio" name="filter_by_tarif" value="1" />Простой</label>
+						<label><input type="radio" name="filter_by_tarif" value="2" />Авангард</label>
+					</span>
+				</div><!-- .f_block -->
+				
+				<div class="f_block" id="filtering_result">
+					<span>Количество совпадений: <i></i></span>
+				</div><!-- .f_block -->
+				
+			</div><!-- #filter -->
+			
+			
+			
+			
+			
+			
+			
+			
+		</div><!-- #main_wrapper -->
+		
+		
+	</body>
+</html>

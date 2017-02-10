@@ -1,0 +1,1 @@
+define(function(){var t={getForecast:function(t,a,e){var n="40e114386b441a3d5a08271deae40dd4";$.getJSON("http://api.openweathermap.org/data/2.5/forecast?q="+t+"&units=metric&appid="+n,function(t){a(t)}).fail(function(){e&&_.isFunction(e)&&e()})}};return t});

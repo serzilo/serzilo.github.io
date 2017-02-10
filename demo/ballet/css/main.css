@@ -1,0 +1,343 @@
+html, body {
+    padding:  0px;
+    margin:  0px;
+    font-family: Georgia;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+#header {
+    height: 566px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
+
+#menu {
+    display: block;
+    width: 961px;
+    text-align: left;
+    list-style: none;
+    padding:  0px;
+    margin:  0px;
+    padding-top: 19px;
+}
+
+#menu li {
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+#menu li.delimeter {
+    display: block;
+    width: 35px;
+    float: left;
+    list-style: none;
+    padding: 0 17px 0 17px;
+    background: url("../images/delimeter.gif") no-repeat;
+    background-position: center;
+}
+
+#menu li a {
+    font-family: Georgia;
+    font-size: 12px;
+    font-style: italic;
+    color: #d9e9f1;
+    text-decoration: underline;
+}
+
+#menu li a:hover { 
+	text-decoration: none;
+}
+
+#top_menu{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background: url("../images/header.png") repeat-x;
+	height:61px;
+	z-index:9000;
+}
+
+#menu_wrap{
+	margin:0 auto;
+	width:960px;
+}
+
+#toptext {
+    width: 961px;
+    text-align: left;
+}
+
+#toptext img {
+    display: block;
+    float: left;
+    margin-top: 33px;
+}
+
+#toptext .right {
+    float: left;
+    padding-right: 25px;
+    width: 600px;
+    margin-top: 70px;
+}
+
+#toptext h1 {
+    padding:  0px;
+    margin:  0px;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: normal;
+	line-height: 60px;
+}
+
+#toptext .brown {
+    display: block;
+    margin-top: 19px;
+    color: #bb9877;
+    font-size: 16px;
+}
+
+#toptext .down {
+    display: block;
+    margin-top: 19px;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+
+
+#content {
+    width: 961px;
+    height: 300px;
+    text-align: left;
+}
+
+
+
+
+
+
+#bottom {
+    background: url("../images/bottomback.png") repeat-x;
+    height: 385px;
+    width: 100%;
+	margin-top:385px;
+}
+
+.h1{
+	font-size:36px;
+}
+
+.h2{
+	font-size:28px;
+}
+
+.add_block{
+	overflow:hidden;
+	color:#727272;
+	font-size:12px;
+	line-height:24px;
+}
+
+.floated_block{
+	float:left;
+	width:335px;
+}
+
+.floated_block i{
+	color:#000;
+}
+
+.some_texts{
+	 background: url("../images/man.png") right top no-repeat;
+	 padding-top:53px;
+	 padding-bottom:60px;
+	 border-bottom:1px dashed #191010;
+	 position:relative;
+}
+
+.some_texts p{
+	float:left;
+	width:291px;
+	padding-right:44px;
+	font-size:16px;
+	line-height:24px;
+	margin:0;
+}
+
+.up{
+	display:block;
+	right:0;
+	bottom:-1px;
+	width:37px;
+	height:37px;
+	cursor:pointer;
+	position:absolute;
+	 background: url("../images/up.png") left top no-repeat;
+}
+
+.up:hover{
+	background: url("../images/up.png") left -37px no-repeat;
+}
+
+.clear{
+	clear:both;
+	display:block;
+}
+
+.floated_big{
+	float:left;
+	width: 504px;
+}
+
+.floated_big_second{
+	width: 457px;
+}
+
+.floated_big strong{
+	float:left;
+	font-weight:normal;
+	color:#727272;
+	font-size:12px;
+	line-height:24px;
+}
+
+.floated_big i{
+	overflow:hidden;
+	color:#000;
+	font-size:14px;
+	line-height:24px;
+	display:block;
+}
+
+#resume{
+	width: 336px;
+	height:102px;
+	background: url("../images/resume.png");
+}
+
+#resume i, #resume a{
+	color:#fff;
+	line-height:24px;
+	font-size: 14px;
+}
+
+#resume i{
+	padding-left:68px;
+	padding-top: 30px;
+	margin-left:23px;
+}
+
+#resume i.pdf{
+	background: url("../images/pdf.png") 0 20px no-repeat;
+}
+
+#resume a:hover{
+	text-decoration:none;
+}
+
+.wraps{
+	overflow:hidden;
+	padding-bottom:39px;
+}
+
+.h3{
+	font-size:24px;
+}
+
+.wraps_blocks .floated_big{
+	padding-bottom:27px;
+}
+
+.wrap_some_floats{
+	overflow:hidden;
+	float:left;
+	width: 504px;
+}
+
+#thought strong{
+	color:#181c1e;
+	font-size: 18px;
+	line-height:24px;
+	padding-left:129px;
+	background: url("../images/thought.png") 0 no-repeat;
+	min-height:48px;
+	padding-top:10px;
+	margin-top:15px;
+}
+
+.add_bottom_link{
+	padding-bottom: 60px;
+	border-bottom: 1px dashed #191010;
+	position: relative;
+}
+
+#Ballettunterricht{
+	border:none;
+	border-collapse: collapse;
+	width:100%;
+	
+}
+
+#Ballettunterricht th{
+	background-color:#181c1e;
+	color:#fff;
+	font-size:14px;
+	font-weight:normal;
+	text-align:left;
+	padding:11px 0;
+}
+
+#Ballettunterricht th.red{
+	background-color:#b61d1d;
+}
+
+#Ballettunterricht td{
+	vertical-align:top;
+	font-size:14px;
+	line-height:24px;
+	padding-top:22px;
+	padding-bottom:65px;
+}
+
+#Ballettunterricht td.silver{
+	color:#727272;
+	font-style:italic;
+}
+
+#botton_inner_wrap{
+	margin:0 auto;
+	width: 960px;
+}
+
+.bottom_blocks{
+	float:left;
+	width: 336px;
+	margin-top:192px;
+}
+
+.bottom_blocks strong{
+	font-size:24px;
+	display:block;
+	font-weight:normal;
+	padding-bottom:35px;
+}
+
+.bottom_blocks i{
+	font-size:14px;
+	line-height:24px;
+	padding-left:37px;
+	display:block;
+	background: url("../images/tiret.png") 0 13px no-repeat;
+}
+
+.bottom_blocks a{
+	color:#a70704;
+}

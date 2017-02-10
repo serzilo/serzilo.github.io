@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="app"></div>
+        
+        <script type="text/template" id="main_template">
+        	<div class="header" id="header">
+        		<div class="header__layout clearfix">
+        			<a href="#" class="btn header__btn left js-index" id="header_menu" title="My cities">
+        				<i class="icon icon_menu"></i>
+        			</a>
+        
+        			<a href="#/search/" class="btn header__btn right js-search" id="header_search" title="Search city">
+        				<i class="icon icon_search"></i>
+        			</a>
+        		</div>
+        	</div>
+        
+        	<div class="content" id="content"></div>
+        </script>
+        <script type="text/template" id="list_template">
+        	<% if (typeof(showSearchInput) !== "undefined") { %>
+        		<div class="block">
+        			<input type="search" value="" placeholder="Enter city" autocapitalize="off" autocorrect="off" autocomplete="off" class="input-text" id="search_input" />
+        		</div>
+        	<% } %>
+        	<ul class="list" id="cities_list_ul"></ul>
+        </script>
+        <script type="text/template" id="list_link_template">
+        	<% if (name) { %>
+        		<li class="list__item">
+        			<a href="<%= link %>" class="btn btn_link"><%= name %></a>
+        		</li>
+        	<% } %>
+        </script>
+        <script type="text/template" id="city_template">
+        	<div class="block">
+        		<a href="#" id="js-bookmark_toggle" class="right icon 
+        			<% if (inBookmarks === true) { %>
+        				icon_bookmark_on
+        			<% } else { %>
+        				icon_bookmark_off
+        			<% } %>
+        		"
+        			<% if (inBookmarks === true) { %>
+        				title="Remove from my cities"
+        			<% } else { %>
+        				title="Add to my cities"
+        			<% } %>
+        		></a>
+        
+        		<h1 class="title"><%= city %></h1>
+        
+        		<div class="clearfix"></div>
+        
+        		<a href="#" id="js-update_forecast" class="btn btn_button">
+        			<div class="icon icon_animate_rotate icon_inline icon_reload_black"></div>
+        			Update Forecast
+        		</a>
+        
+        		<div id="city_forecast"></div>
+        	</div>
+        </script>
+        <script type="text/template" id="block_template">
+        	<div class="block
+        		<% if (typeof(centeredContent) !== "undefined") { %>
+        			text-center
+        		<% } %>
+        	">
+        		<%= text %>
+        	</div>
+        </script>
+        <script type="text/template" id="alert_template">
+        	<div class="alert">
+        		<%= text %>
+        	</div>
+        </script>
+        <script type="text/template" id="forecast_template">
+        	<div class="forecast">
+        		<%
+        			var previousDay = null,
+        				months = ["January","February","March","April","May","June","July","August","September","October","November","December"],
+        				currentDate = new Date(),
+        				currentDay = currentDate.getDate(),
+        				currentMonth = months[currentDate.getMonth()];
+        
+        		    _.each(list, function(item, key){
+        			    var date = new Date(item.dt_txt.replace(/(\d+)-(\d+)-(\d+)/, '$2/$3/$1')),
+        			    	day = date.getDate(),
+        			    	month = months[date.getMonth()],
+        			    	hours = date.getHours(),
+        			    	minutes = date.getMinutes(),
+        			    	time = hours + ':' + (minutes < 10 ? '0' : '') + minutes,
+        			    	showNewDay = (previousDay == day ? false : true),
+        			    	today = (day === currentDay && month === currentMonth ? 'Today' : false);
+        
+        			    previousDay = day;
+        		%>
+        
+        		<% if (showNewDay == true) { %>
+        			<div class="forecast__date
+        				<% if (today != false) { %>
+        					forecast__date_today
+        				<% } %>
+        			">
+        				<% if (today != false) { %>
+        					<%= today %>
+        				<% } else { %>
+        					<%= month %> <%= day %>
+        				<% } %>
+        			</div>
+        		<% } %>
+        
+        		<div class="forecast__item">
+        			<div class="forecast__description">
+        				<div class="forecast__time">
+        					<%= time %>
+        				</div>
+        
+        				<%
+        				    _.each(item.weather,function(weather, key){
+        				%>
+        					<div>
+        						<div class="icon icon_inline icon_<%= weather.icon %>" title="<%= weather.description %>"></div>
+        
+        						<span class="forecast__weather-description"><%= weather.description %></span>
+        					</div>
+        				<%
+        				    });
+        				%>
+        
+        				<table class="forecast__conditions">
+        					<tr>
+        						<td>
+        							<span class="forecast__label">Temp:</span> 
+        						</td>
+        						<td>
+        							<% if (item.main.temp > 0) { %>+<% } %><%= item.main.temp %>&deg;C
+        						</td>
+        					</tr>	
+        					<tr>
+        						<td>
+        							<span class="forecast__label">Pressure:</span> 
+        						</td>
+        						<td>
+        							<%= item.main.pressure %>hPa
+        						</td>
+        					</tr>	
+        					<tr>
+        						<td>
+        							<span class="forecast__label">Humidity:</span> 
+        						</td>
+        						<td>
+        							<%= item.main.humidity %>%
+        						</td>
+        					</tr>	
+        					<tr>
+        						<td>
+        							<span class="forecast__label">Cloudiness:</span> 
+        						</td>
+        						<td>
+        							<%= item.clouds.all %>%
+        						</td>
+        					</tr>	
+        					<tr>
+        						<td>
+        							<span class="forecast__label">Wind speed:</span> 
+        						</td>
+        						<td>
+        							<%= item.wind.speed %> meter/sec 
+        						</td>
+        					</tr>
+        				</table>	
+        			</div>
+        		</div>
+        
+        		<%
+        		    });
+        		%>
+        	</div>
+        </script>
+        
+        <script data-main="js/boot" src="js/require.js"></script>
+    </body>
+</html>

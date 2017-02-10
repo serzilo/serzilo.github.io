@@ -1,0 +1,66 @@
+    .s_i_allservices { background-position: 0px -24px;}
+    .s_i_allservices_gray { background-position: 0px -72px;}
+    .s_i_announcement { background-position: 0px -120px;}
+    .s_i_chat { background-position: 0px -169px;}
+    .s_i_community { background-position: 0px -216px;}
+    .s_i_diary { background-position: 0px -264px;}
+    .s_i_exchange { background-position: 0px -312px;}
+    .s_i_exit { background-position: 0px -336px;}
+    .s_i_favorites { background-position: 0px -410px;}
+    .s_i_forum { background-position: 0px -456px;}
+    .s_i_games { background-position: 0px -552px;}
+    .s_i_guestbook { background-position: 0px -600px;}
+    .s_i_help { background-position: 0px -648px;}
+    .s_i_info { background-position: 0px -696px;}
+    .s_i_links { background-position: 0px -720px;}
+    .s_i_love { background-position: 0px -792px;}
+    .s_i_menu { background-position: 0px -841px;}
+    .s_i_music { background-position: 0px -888px;}
+    .s_i_options { background-position: 0px -936px;}
+    .s_i_otherservices { background-position: 0px -984px;}
+    .s_i_people { background-position: 0px -1032px;}
+    .s_i_search { background-position: 0px -1080px;}
+    .s_i_weather { background-position: 0px -1128px;}
+    .s_i_titles { background-position: 0px -1152px;}
+    
+    .s_i_mobiles { background-position: 0px -1205px;}
+    .s_i_files { background-position: 0px -1248px;}
+    .s_i_friends { background-position: 0px -1296px;}
+    .s_i_history { background-position: 0px -1344px;}
+    .s_i_photos { background-position: 0px -1392px;}
+    .s_i_videos { background-position: 0px -1440px;}
+    .s_i_findPair { background-position: 0px -1457px;}
+    
+
+@media all and (min-width: 900px){
+    .s_i_allservices { background-position: 0px 0px;}
+    .s_i_allservices_gray { background-position: 0px -48px;}
+    .s_i_announcement { background-position: 0px -96px;}
+    .s_i_chat { background-position: 0px -144px;}
+    .s_i_community { background-position: 0px -192px;}
+    .s_i_diary { background-position: 0px -240px;}
+    .s_i_exchange { background-position: 0px -288px;}
+    .s_i_exit { background-position: 0px -360px;}
+    .s_i_favorites { background-position: 0px -384px;}
+    .s_i_forum { background-position: 0px -432px;}
+    .s_i_games { background-position: 0px -528px;}
+    .s_i_guestbook { background-position: 0px -576px;}
+    .s_i_help { background-position: 0px -624px;}
+    .s_i_info { background-position: 0px -672px;}
+    .s_i_links { background-position: 0px -744px;}
+    .s_i_love { background-position: 0px -768px;}
+    .s_i_menu { background-position: 0px -816px;}
+    .s_i_music { background-position: 0px -864px;}
+    .s_i_options { background-position: 0px -912px;}
+    .s_i_otherservices { background-position: 0px -960px;}
+    .s_i_people { background-position: 0px -1008px;}
+    .s_i_weather { background-position: 0px -1104px;}
+    .s_i_titles { background-position: 0px -1152px;}
+    
+    .s_i_mobiles { background-position: 0px -1181px;}
+    .s_i_files { background-position: 0px -1229px;}
+    .s_i_friends { background-position: 0px -1272px;}
+    .s_i_history { background-position: 0px -1320px;}
+    .s_i_photos { background-position: 0px -1368px;}
+    .s_i_videos { background-position: 0px -1416px;}
+}

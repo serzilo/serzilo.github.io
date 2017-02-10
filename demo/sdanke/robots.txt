@@ -1,0 +1,30 @@
+User-agent: *
+Disallow: /xml/
+Disallow: /grandis/
+Disallow: /tk_neva/
+Disallow: /wiki/
+Disallow: /office/
+Disallow: /addr/
+Disallow: /call/
+Disallow: /connect/
+Disallow: /css/
+Disallow: /danke/
+Disallow: /danke-new/
+Disallow: /db/
+Disallow: /ddut/
+Disallow: /files/
+Disallow: /grb/
+Disallow: /js/
+Disallow: /magaz/
+Disallow: /mychoice/
+Disallow: /news/
+Disallow: /TKNEVA/
+
+
+
+
+
+
+
+
+

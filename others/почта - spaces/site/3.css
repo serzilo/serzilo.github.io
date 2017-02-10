@@ -1,0 +1,14 @@
+.show_hide_content{
+	text-decoration:none;
+	border-bottom:1px dashed #069;
+}
+
+.show_hide_content:hover{
+	text-decoration:none;
+	border-bottom:1px dashed red;
+}
+
+.sliderw{
+	border-top:1px solid #999;
+	margin-top: 16px;
+}

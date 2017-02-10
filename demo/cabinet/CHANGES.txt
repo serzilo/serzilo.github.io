@@ -1,0 +1,31 @@
+
+               ИСТОРИЯ ИЗМЕНЕНИЙ ДЛЯ ПРОЕКТА 'PRORESOURCE_MARKUP'
+
+[ 2010-12-21 13:14 ]------------------------------------------------------------
+Первая версия.
+
+[ 2010-12-21 13:15 ]------------------------------------------------------------
+Изменённые, добавленные и удалённые файлы и папки:
+  - js/SafariSetup.exe
+
+[ 2010-12-22 11:57 ]------------------------------------------------------------
+Продукция.
+Изменённые, добавленные и удалённые файлы и папки:
+  * index.html
+  * text.html
+  * css/main.css
+  * js/main.js
+  + production.html
+  + grb
+  + production2.html
+  + img/solodblock.png
+  + img/table__th.png
+  + img/vdline.png
+  + img/numbereditem_4.png
+  + img/numbereditem_1.png
+  + img/solodblock-header__nav__back.png
+  + img/numbereditem_3.png
+  + img/numbereditem_2.png
+  + img/cols__col.png
+  + img/bigthing/caramel2.jpg
+

@@ -1,0 +1,3 @@
+#reasons img, .calendar, #header__logo, #header__phone, #bigwork__info, .bigwork__nav, .works__work, .works__work__marker {
+	behavior: url(iepngfix/iepngfix.htc);
+}

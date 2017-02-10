@@ -1,0 +1,11 @@
+#car{
+	display: inline;
+}
+
+#phones-area{
+	display: inline;
+}
+
+#circles{
+	background: url(images/circles.png) no-repeat;
+}

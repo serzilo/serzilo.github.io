@@ -1,0 +1,35 @@
+@charset "windows-1251";
+
+#main-wrapper {
+	left: expression(((parseInt(document.body.clientWidth)-870)/2)+'px');
+}
+
+#navigation ul {
+	right: 0;
+	top: 97px;
+}
+
+#navigation ul li a.now:hover {
+	background: #78221f;
+	color: #ffffff;
+}
+
+.picture {
+	margin: 0 9px 20px 9px;
+}
+
+img {
+	behavior: url("iepngfix.htc");
+}
+
+
+.events .event img {
+	margin-right: 24px;
+}
+
+
+table,
+form {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}

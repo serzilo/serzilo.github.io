@@ -1,0 +1,3 @@
+localhost
+tk_neva
+root

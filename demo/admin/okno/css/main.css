@@ -1,0 +1,166 @@
+#online_consultant {
+	width:438px;
+	
+	height:auto;
+	margin:0 auto;
+	margin-left:4px;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:relative;
+}
+
+#messages{
+	position:relative;
+	margin:0 auto;
+	height:542px;
+	width:422px;
+	
+	
+}
+
+.vopros {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.vopros p{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#000;
+	margin:0 6px;
+	padding-left:65px;
+}
+
+.vopros p span{
+	font-size:9px;
+	display:block;
+}
+
+.vopros img{
+	float:left;
+	border:1px solid #000;
+	margin-left:9px;
+	margin-right:9px;
+}
+
+#wait{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+	margin:6px auto;
+	text-align:center;
+	display:none;
+}
+
+#forma {
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+#forma textarea {
+	border:1px solid #000;
+	margin:7px 7px 0px 7px;
+	width:394px;
+	height:94px;
+	padding:6px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	outline:none;
+}
+
+.default_value{
+	color:#7e7e7e;
+}
+
+#online_button {
+	cursor:pointer;
+	outline:none;
+	margin-left:5px;
+	margin-bottom:15px;
+	margin-top:-2px;
+	width:412px;
+	height:29px;
+}
+
+
+
+#main_wrap{
+	/*position:absolute;*/
+	margin: 0 auto;
+	height:auto;
+	z-index:9999999;
+	width:445px;
+	margin-top:7px;
+
+	
+	overflow:hidden;
+}
+
+#mes_area{
+	/*height:190px;*/
+	height:360px;
+	border:1px solid #000;
+	overflow:auto;
+	
+}
+
+#shadow_left{
+	height:auto;
+	width:445px;
+	position:relative;
+	overflow:hidden;
+}
+
+#shadow_right{
+	height:auto;
+	width:445px;
+}
+
+#shadow_top{
+	width:445px;
+	height:6px;
+}
+
+#shadow_bottom{
+	width:445px;
+	height:6px;
+}
+
+#top2{
+	margin:0 auto;
+	width:422px;
+	height:3px;
+}
+
+#bottom2{
+	margin:0 auto;
+	width:422px;
+	height:3px;
+}
+
+#online_consultant{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#my_shadow{
+	position:absolute;
+	width:4px;
+	height:620px;
+	top:0;
+	bottom:0;
+}
+
+
+#help_block{
+	position:absolute;
+	display:none;
+}
+
+.vopros {
+	border-bottom:1px solid #000;
+}
+
+#wait{
+	color:#000;
+}

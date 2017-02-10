@@ -1,0 +1,36 @@
+.add_margin_left label{
+	margin-left:6px;
+}
+
+.add_margin_left{
+	margin-left:2.5%;
+}
+
+#header__menu li {
+    display: inline;
+    float: left;
+}
+
+.solodblock_50 {
+	padding-bottom:20px;
+}
+
+.solodblock-header{
+	z-index: 99999;
+}
+
+.solodblock-header__login_window{
+	padding:0;
+	height:100px;
+	width:260px;
+}
+
+.solodblock-header__login_window input#login, .solodblock-header__login_window input#password{
+	width:220px;
+	margin:0;
+	height:20px;
+	margin-bottom:5px;
+	padding:0 10px 0 10px;
+	border:1px solid #d6d3cb;
+	outline:none;
+}

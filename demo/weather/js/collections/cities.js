@@ -1,0 +1,1 @@
+define(["models/city"],function(e){var n=Backbone.Collection.extend({model:e,localStorage:new Backbone.LocalStorage("cities"),comparator:"order",inCollection:function(e){return this.findWhere({name:e})},toggleModel:function(e){var n=this.inCollection(e);n?n.destroy():this.create({name:e,link:"#/city/"+encodeURIComponent(e)})}});return new n});

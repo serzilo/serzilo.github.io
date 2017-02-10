@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML5 History Test</title>
+</head>
+<body>
+	<script>
+		function testh5api(){
+			alert(!!(window.history && history.pushState));
+		}
+		
+		function getQueryVariable(variable){
+			if (window.location.hash != ''){
+				var query = document.location.hash.substring(1);
+			}else{
+				var query = window.location.toString();
+				//var query = window.location.search.substring(1);
+			}
+			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+				if(pair[0] == variable){return pair[1];}
+			}
+			return(false);
+		}
+		
+		function getQueryWord(variable){
+			if (window.location.hash != ''){
+				var query = document.location.hash.substring(1);
+			}else{
+				var query = window.location.toString();
+			}
+			if (query.search(variable) != -1){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	</script>
+	
+	<button onclick="testh5api();">Test html5 history api</button>
+	
+	<button onclick="alert(getQueryWord('demo'))">Найти слово demo в строке браузера</button>
+	
+	<button onclick="alert('результат: '+window.location.search)">window location search</button>
+	
+	<i>
+</body>
+</html>

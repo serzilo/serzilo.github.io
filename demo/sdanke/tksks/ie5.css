@@ -1,0 +1,71 @@
+body{
+	text-align: center;
+}
+
+#main-area{
+	text-align: center;
+}
+
+#top-area, #center-area, #content-area{
+	text-align:left;
+}
+
+#left-content-area-3{
+	text-align: center;
+}
+
+h2{
+	text-align:left;
+}
+
+#form-info-area{
+	text-align:left;
+}
+
+#menu-down-area{
+	left: 50%;
+	margin-left: -402px;
+}
+
+#right-info-area{
+	left: 50%;
+	margin-left: 304px;
+}
+
+.left-content-area{
+	width: 601px;	
+}
+
+#left-top-border-area{
+	width: 601px;
+}
+
+#left-top-border-center-area{
+	width: 589px;
+}
+
+.extlogo{
+	width: 106px;
+}
+
+.std-text-input{
+	line-height: 26px;
+}
+
+.std-textarea{
+	width: 320px;
+}
+
+#center-area-1{
+	width: 330px;
+}
+
+#center-area-2{
+	width: 170px;
+}
+
+
+#circles{
+	left: 50%;
+	margin-left: -422px;
+}

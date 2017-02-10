@@ -1,0 +1,37 @@
+#online_panel,#button_nadpis, #shadow_top, #shadow_bottom, #online_button, #my_shadow{
+	behavior: url(js/iepngfix.htc);
+}
+
+#shadow_top{
+	margin-bottom:-18px;
+}
+
+#top2{
+margin-top:-15px;
+}
+
+#messages{
+	margin-bottom:-20px;
+}
+
+#bottom2{
+	margin-top:-20px;
+}
+
+#online_panel{
+	bottom:2px;
+}
+
+#my_shadow{
+	margin-top:1px;
+}
+
+#shadow_bottom{
+	margin-bottom:-18px;
+}
+
+#online_consultant{
+	margin-top:-2px;
+	padding-top:0px;
+	margin-bottom:-1px;
+}

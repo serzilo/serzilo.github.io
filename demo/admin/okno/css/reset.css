@@ -1,0 +1,27 @@
+html, body, div {
+	margin:0;
+	padding:0;
+	color:#000;
+	}
+
+a {
+	outline:none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, form, input, textarea {
+	margin:0;
+	padding:0;
+}
+
+p {
+font-family: "Times New Roman", Times, serif;
+font-size:19px;
+}
+
+a img {
+	border:none;
+}
+
+.clear{
+	clear:both;
+}

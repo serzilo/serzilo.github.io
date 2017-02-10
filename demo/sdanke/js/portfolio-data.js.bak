@@ -1,0 +1,143 @@
+var portfolio = [
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w5.jpg",
+		"big": "grb/bw5.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/tioindigo-card.jpg",
+		"big": "portfolio/tioindigo-card.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/tioindigo-booklet.jpg",
+		"big": "portfolio/tioindigo-booklet.jpg"
+	},
+	{
+		"title": "АН «Манхэттен»",
+		"description": "X - это не просто буква",
+		"link": "",
+		"preview": "grb/w4.jpg",
+		"big": "portfolio/manhattan.png"
+	},
+	{
+		"title": "Фотоимперия",
+		"description": "«Фотоимперия» — профессионально, качественно, оригинально.",
+		"link": "photoimperium.ru",
+		"preview": "grb/w2.jpg",
+		"big": "portfolio/photoimperia.png"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w3.jpg",
+		"big": "portfolio/tgi_travel_flaer.png"
+	},
+	{
+		"title": "Арбитражный Третейский суд",
+		"description": "Серьезно, но со вкусом",
+		"link": "www.arbitri.spb.ru",
+		"preview": "grb/w6.jpg",
+		"big": "portfolio/arbitri.png"
+	},
+	{
+		"title": "",
+		"description": "",
+		"link": "",
+		"preview": "grb/femi.jpg",
+		"big": "portfolio/femi.png"
+	},
+	{
+		"title": "",
+		"description": "",
+		"link": "",
+		"preview": "grb/femi1.jpg",
+		"big": "portfolio/femi1.jpg"
+	},
+	{
+		"title": "",
+		"description": "",
+		"link": "",
+		"preview": "grb/femi2.jpg",
+		"big": "portfolio/femi2.jpg"
+	},
+
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "www.mychoiceonline.ru",
+		"preview": "grb/mco.jpg",
+		"big": "portfolio/mco.jpg"
+	},
+	{
+		"title": "Редизайн сайта",
+		"description": "Полная реструктуризация и обновление сайта ТЭК «НЕВА ЦЕНТР» ",
+		"link": "tioindigo.ru",
+		"preview": "grb/neva.jpg",
+		"big": "portfolio/tkneva.jpg"
+	},
+	{
+		"title": "Редиза	йн сайта",
+		"description": "Полная реструктуризация и обновление сайта ТЭК «НЕВА ЦЕНТР» ",
+		"link": "tioindigo.ru",
+		"preview": "grb/booklet-aiesec.jpg",
+		"big": "portfolio/booklet-aiesec.jpg"
+	},
+{
+		"title": "Редиза	йн сайта",
+		"description": "Полная реструктуризация и обновление сайта ТЭК «НЕВА ЦЕНТР» ",
+		"link": "tioindigo.ru",
+		"preview": "grb/booklet-aiesec2.jpg",
+		"big": "portfolio/booklet-aiesec2.jpg"
+	},
+{
+		"title": "Редиза	йн сайта",
+		"description": "Полная реструктуризация и обновление сайта ТЭК «НЕВА ЦЕНТР» ",
+		"link": "tioindigo.ru",
+		"preview": "grb/booklet-aiesec3.jpg",
+		"big": "portfolio/booklet-aiesec3.jpg"
+	},
+	{
+		"title": "Редиза	йн сайта",
+		"description": "Полная реструктуризация и обновление сайта ТЭК «НЕВА ЦЕНТР» ",
+		"link": "www.nevatk.ru",
+		"preview": "grb/neva.jpg",
+		"big": "portfolio/tkneva.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w5.jpg",
+		"big": "grb/bw5.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w6.jpg",
+		"big": "grb/bw5.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w7.jpg",
+		"big": "grb/bw5.jpg"
+	},
+	{
+		"title": "Редрендинг Галереи",
+		"description": "Фирменный стиль галереи «Тиоиндиго» стал более фантастичнем, изысканным, и вкусным. Теперь в Галерею стало заходить приятнее.",
+		"link": "tioindigo.ru",
+		"preview": "grb/w8.jpg",
+		"big": "grb/bw5.jpg"
+	}
+];

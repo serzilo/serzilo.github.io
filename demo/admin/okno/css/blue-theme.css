@@ -1,0 +1,44 @@
+#online_consultant {
+		background: #055592 url(../blue-theme/online_bg.jpg) repeat-x top center;
+}
+
+#messages{
+		background: #0e466f url(../blue-theme/mes_bg.jpg) repeat-x top center;
+}
+
+.vopros {
+	border-bottom:1px solid #017893;
+}
+
+#wait{
+	color:#017893;
+}
+
+#online_button {
+		background:url(../blue-theme/button.png) no-repeat center center;
+}
+
+#online_panel{
+		background:url(../blue-theme/online_bg.png) no-repeat center left;
+}
+
+#shadow_top{
+		background:url(../blue-theme/top.png) no-repeat center bottom;
+}
+
+#shadow_bottom{
+		background:url(../blue-theme/bottom.png) no-repeat center top;
+}
+
+#top2{
+		background:url(../blue-theme/top_2.png) no-repeat center bottom;
+}
+
+#bottom2{
+		background:url(../blue-theme/bottom_2.png) no-repeat center bottom;
+}
+
+#my_shadow{
+		background: url(../blue-theme/left_shadow.png) repeat-y left;
+}
+

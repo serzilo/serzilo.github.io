@@ -1,0 +1,31 @@
+img {
+	behavior: url(iepngfix/iepngfix.htc);
+}
+
+#footer__l, .news__date, #header__slogan, #header__phone, #header__logo, img {
+	behavior: url(iepngfix/iepngfix.htc);
+}
+
+.bigthing__inner1, h1 {
+    background: none;
+}
+
+.bigthing, #footer {
+    width: expression(document.body.clientWidth+'px');
+}
+
+.solodblock_100{
+	width:100%;
+}
+
+.solodblock-header__login_window{
+	bottom:-112px;
+}
+
+ul.cabinet_left_menu li.active a:hover{
+	background: url(../img/cabinet_left_menu_active_bg.png) repeat-x;
+}
+
+.solodblock_50 {
+	padding-bottom:20px;
+}

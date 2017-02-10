@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+	<title>Система Управления Информацией</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+      <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="http://saydanke.ru/designkota/admin/css/ie7.css" />
+        <![endif]--> 
+     <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://saydanke.ru/designkota/admin/css/ie6.css" />
+        <![endif]--> 
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/dialog_open3.js"  ></script>
+    <script type="text/javascript" src="js/time.js"></script>
+  
+
+
+    
+
+</head>
+<body onload="startTime()">
+
+
+
+
+
+<div id="content">
+
+<div id="top_gradient"></div><!-- #top_gradient-->
+
+<div id="top_block">
+	<div id="ltl_gradient"></div><!-- #ltl_gradient-->
+	<div id="top_header">Система Управления Информацией <br /><span>Это страница административной панели сайта www.nevatk.ru</span></div><!-- #top_header-->
+</div><!-- #top_block-->
+
+
+<table id="main_block">
+<tr>
+<td valign="top" id="first_td">
+<div id="left_menu">
+
+<div id="logo"><a href="#"><img src="images/logo.jpg" alt="Danke" /></a></div><!-- #logo-->
+
+<div id="to_main"><a href="#">Главная</a></div><!-- #to_main-->
+
+<div class="items"><span id="text">Тексты</span></div><!-- .items-->
+		<div class="menu_items" id="text_items"><a href="#">Страница</a></div><!-- .menu_items-->
+        <div class="menu_items" id="text_items2"><a href="#">Ключевые слова</a></div><!-- .menu_items-->
+<div class="items"><span id="filials">Филиалы</span></div><!-- .items-->
+  	 	 <div class="menu_items" id="filials_items"><a href="#">Данные филиала</a></div><!-- .menu_items-->
+<div class="items"><span id="zayavki">Заявки</span></div><!-- .items-->
+		<div class="menu_items" id="zayavki_items"><a href="#">Список заявок</a></div><!-- .menu_items-->
+<div class="items"><span id="news">Новости</span></div><!-- .items-->
+	<div class="menu_items" id="news_items"><a href="#">Добавить</a></div><!-- .menu_items-->
+    <div class="menu_items" id="news_items2"><a href="#">Изменить/удалить</a></div><!-- .menu_items-->
+<div class="items"><span id="partners">Партнеры</span></div><!-- .items-->
+	<div class="menu_items" id="partners_items"><a href="#">Добавить</a></div><!-- .menu_items-->
+    <div class="menu_items" id="partners_items2"><a href="#">Изменить/удалить</a></div><!-- .menu_items-->
+<div class="items"><span id="obshie_documents">Общие документы</span></div><!-- .items-->
+	<div class="menu_items" id="obshie_documents_items"><a href="#">Добавить/удалить</a></div><!-- .menu_items-->
+<div class="items"><span id="ceni">Изменение цен</span></div><!-- .items-->
+	<div class="menu_items" id="ceni_items"><a href="#">Изменить</a></div><!-- .menu_items-->
+<div class="items"><span id="messages">Сообщения</span></div><!-- .items-->
+	<div class="menu_items" id="messages_items"><a href="#">Просмотреть</a></div><!-- .menu_items-->
+<div class="items"><span id="nastroiky">Настройки</span></div><!-- .items-->
+	<div class="menu_items" id="nastroiky_items"><a href="#">Изменить пароль</a></div><!-- .menu_items-->
+    <div class="menu_items" id="nastroiky_items2"><a href="#">Выход</a></div><!-- .menu_items-->
+
+<div id="support"><span id="head">Служба поддержки</span>
+
+<img src="images/serju.jpg" alt="Сергей Журин" />
+<p>Технический директор <br /><span id="serju">Сергей Журин</span><br /><br />Телефон: (812) 920-14-53<br /><a href="#">Написать письмо</a></p>
+<div class="clear"></div><!-- .clear -->
+</div><!-- #support-->
+
+</div><!-- #left_menu -->
+
+<div class="clear"></div><!-- .clear -->
+</td>
+<td valign="top">
+<div id="main_info">
+<!--Часть для контента-->
+
+<div id="config_panel"></div><!-- #config_panel -->
+<div id="config_panel_config">
+	<div id="config_panel_time">Сейчас: <div id="wrap_time"><div id="now_this_time"></div><div id="now_this_time2"></div></div>
+    
+    </div><!-- #config_panel_time-->
+    <div id="config_panel_status">
+    <form action="" id="status_forma">
+    Статус: 
+    	<select size="1">
+        	<option selected="selected" value="1">Готов отвечать</option>
+            <option value="2">Не готов отвечать</option>
+             <option value="3">Скоро приду</option>
+              <option value="4">Скоро уйду</option>
+        </select>
+        </form>
+    </div><!-- #config_panel_status-->
+    <div id="config_panel_history">
+    	<a href="" class="active_button">Сегодня</a><a href="">История</a>
+    </div><!-- #config_panel_history -->
+     <div id="config_panel_guests">
+    	Сейчас на сайте: 20 гостей
+    </div><!-- #config_panel_guests -->
+    <div class="clear"></div><!-- .clear -->
+</div><!-- #config_panel -->
+	<table id="people">
+    <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Санкт-Петербург</span></td>
+    <td>6 сообщений</td>
+    <td>Дата разговора: <br /><span class="black">10 февраля 2011 года</span></td>
+     <td>Последнее изменение: <br />10 февраля 2011 года, <span class="black">18:10</span></td>
+     <td class="new_mes"><a href="#"><span>2</span> новое сообщение</a></td>
+     <td class="dialog"><a href="okno.html">Открыть диалог</a></td>
+    </tr>
+    
+    <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Москва</span></td>
+    <td>2 сообщения</td>
+    <td>Дата разговора: <br /><span class="black">10 февраля 2011 года</span></td>
+     <td>Последнее изменение: <br />10 февраля 2011 года, <span class="black">18:10</span></td>
+     <td class="new_mes"><a href="#"><span>2</span> новое сообщение</a></td>
+     <td class="dialog"><a href="okno.html">Открыть диалог</a></td>
+    </tr>
+    
+    <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Ленинградская область</span></td>
+    <td>3 сообщения</td>
+    <td>Дата разговора: <br /><span class="black">8 февраля 2011 года</span></td>
+     <td>Последнее изменение: <br />10 февраля 2011 года, <span class="black">18:10</span></td>
+     <td class="new_mes"><a href="#" class="grey">нет новых сообщений</a></td>
+     <td class="dialog"><a href="okno.html">Открыть диалог</a></td>
+    </tr>
+    
+        <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Санкт-Петербург</span></td>
+    <td>16 сообщений</td>
+    <td class="grey">Дата разговора: <br /><span class="grey">8 февраля 2011 года</span></td>
+     <td class="grey">Последнее изменение: <br />10 февраля 2011 года, 18:10</td>
+     <td class="new_mes"><a href="#" class="grey">нет новых сообщений</a></td>
+     <td class="dialog"><a href="okno.html" class="not_active">Открыть диалог</a></td>
+    </tr>
+    
+     <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Москва</span></td>
+    <td>5 сообщений</td>
+    <td class="grey">Дата разговора: <br /><span class="grey">6 февраля 2011 года</span></td>
+     <td class="grey">Последнее изменение: <br />10 февраля 2011 года, 18:10</td>
+     <td class="new_mes"><a href="#" class="grey">нет новых сообщений</a></td>
+     <td class="dialog"><a href="okno.html" class="not_active">Открыть диалог</a></td>
+    </tr>
+    
+     <tr class="new_messages">
+    <td class="add"></td>
+    <td>Гость<br /> <span class="grey">Ленинградская область</span></td>
+    <td>2 сообщений</td>
+    <td class="grey">Дата разговора: <br /><span class="grey">6 февраля 2011 года</span></td>
+     <td class="grey">Последнее изменение: <br />10 февраля 2011 года, 18:10</td>
+     <td class="new_mes"><a href="#" class="grey">нет новых сообщений</a></td>
+     <td class="dialog"><a href="okno.html" class="not_active">Открыть диалог</a></td>
+    </tr>
+    
+    </table>
+
+
+
+
+
+
+
+
+
+<!--Часть для контента end-->
+</div><!-- #main_info -->
+</td></tr></table>
+
+
+
+
+
+<div class="clear"></div><!-- .clear -->
+</div><!-- #content -->
+
+
+
+
+<div class="clear"></div><!-- .clear -->
+
+
+
+
+
+
+<div id="footer">
+	<div id="foot1"></div><!-- #foot1 -->
+    <div id="foot2"><p>&copy;1997-2009 <a href="#">Рекламное агенство &laquo;Danke&raquo;</a>. Все права защищены законом об авторском праве. <br />Иконки &copy;2009 <a href="#">Yusuke Kamiyamane</a></p></div><!-- #foot2 -->
+
+</div><!-- #footer-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+define(["routers/router"],function(e){var t=Backbone.View.extend({el:$("#app"),template:_.template($("#main_template").html()),render:function(){this.$el.html(this.template()),new e,Backbone.history.start()}});return new t});

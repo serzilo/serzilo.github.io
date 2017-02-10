@@ -1,0 +1,75 @@
+.dialog a{
+	text-decoration:none;
+	background: url(../images/dialog_button.png) no-repeat center left;
+	color:#FFF;
+	padding:5px 10px 7px 15px;
+	display:block;
+	height:10px;
+	width:104px;
+	margin-top:2px;
+}
+
+#now_this_time{
+	color:#ea1c20;
+	font-size:20px;
+	font-weight:bold;
+	vertical-align:-2px;
+	position:absolute;
+	margin-top:0px;
+	margin-left:60px;
+}
+
+#now_this_time2{
+	color:#ea1c20;
+	font-size:20px;
+	font-weight:bold;
+	vertical-align:-2px;
+	position:absolute;
+	margin-top:0;
+	margin-left:93px;
+	background-color:transparent;
+}
+
+#wrap_time{
+	margin-top:-20px;
+}
+
+#config_panel_history a.active_button{
+	display:block;
+	color:#FFF;
+	background: url(../images/active_button.png) no-repeat center center;
+	height:19px;
+	width:52px;
+	padding-left:16px;
+	padding-right:18px;
+	padding-top:8px;
+	padding-bottom:8px;
+	margin-top:-10px;
+	float:left;
+	margin-left:0px;
+}
+
+#config_panel_history a.active_button, .new_mes span, .dialog a{
+	behavior: url(js/iepngfix.htc);
+}
+
+.new_mes a {
+	height:10px;
+	margin-top:3px;
+	
+	padding:8px 1px 7px 10px;
+	width:150px;
+	
+
+}
+
+.new_mes span{
+	display:inline;
+	background: url(../images/new_mes.png) no-repeat center center;
+	padding:3px 10px 7px 8px;
+	height:10px;
+	margin-top:-1px;
+	text-align:left;
+	float:left;
+
+}
